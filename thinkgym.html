@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description"
+    content="ThinkGym - A comprehensive gym management app with admin, staff, and user profiles. Track staff, equipment, payments, biometric attendance, and more.">
+  <meta name="keywords" content="ThinkGym, gym management, fitness app, gym software, staff management, equipment tracking">
+  <title>ThinkGym - ThinkOMega</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Normalize CSS -->
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css'>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Google Fonts (JetBrains Mono) -->
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Communal CSS -->
+  <link rel="stylesheet" href="style.css">
+  <!-- Think Gym CSS -->
+  <link rel="stylesheet" href="thinkgym.css">
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+  <!-- Start Landing Page -->
+  <div class="landing-page">
+    <!-- Header -->
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+        <div class="container">
+          <a class="navbar-brand d-flex align-items-center" href="index.html">
+            <img src="images/LOGO.png" alt="ThinkOMega Logo" width="50" height="50"
+              class="d-inline-block align-text-top">
+            <div class="logotext ms-2">
+              <h1 class="mb-0" style="font-size:1.5rem;">
+                Think<b>OMega</b>
+              </h1>
+            </div>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav links">
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="work.html">Work</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="thinkgym.html">ThinkGym</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="advisors.html">Advisors</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link btn-get-started" href="#">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- End Header -->
+
+    <!-- App Detail Section -->
+    <section class="app-detail-section">
+      <div class="container">
+        <!-- First Image Section -->
+        <div class="first-image-section">
+          <img src="images/thinkgym/first.png" alt="ThinkGym Preview" class="first-image">
+        </div>
+        
+        <!-- Hero Section -->
+        <div class="app-hero">
+          <div class="row align-items-center">
+            <div class="col-lg-4 col-md-5 text-center mb-4 mb-md-0">
+              <div class="app-icon-wrapper">
+                <img src="images/thinkgym/logo.webp" alt="ThinkGym App Icon" class="app-icon">
+              </div>
+            </div>
+            <div class="col-lg-8 col-md-7">
+              <h1 class="app-name">ThinkGym</h1>
+              <p class="app-developer">by ThinkOMega</p>
+              <p class="app-tagline">Complete Gym Management Solution</p>
+              <div class="app-badges">
+                <span class="badge">Gym Management</span>
+                <span class="badge">Staff Tracking</span>
+                <span class="badge">Equipment Maintenance</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Description Section -->
+        <div class="app-description">
+          <h2>About</h2>
+          <p class="description-text">
+            ThinkGym is a comprehensive gym management application designed to streamline every aspect of your fitness
+            facility operations. With three distinct profiles—Admin, Staff, and User—the app provides a seamless
+            experience for managing your entire gym ecosystem.
+          </p>
+          <p class="description-text">
+            Track staff members, monitor equipment, manage payments, and oversee all operations in real-time. ThinkGym
+            offers advanced features including biometric staff attendance integration, automated equipment maintenance
+            reminders, WhatsApp integration for instant communication, and comprehensive user tracking capabilities.
+          </p>
+        </div>
+
+        <!-- Features Section -->
+        <div class="app-features">
+          <h2>Key Features</h2>
+          <!-- First Row - Featured Features with Images -->
+          <div class="row mb-4">
+            <div class="col-md-4 mb-4">
+              <div class="feature-card featured-feature">
+                <div class="feature-icon">
+                  <img src="images/thinkgym/whatsapp.png" alt="WhatsApp Integration" class="feature-image-icon-large">
+                </div>
+                <h3>WhatsApp Integration</h3>
+                <p>Seamless WhatsApp integration for instant notifications, reminders, and communication.</p>
+              </div>
+            </div>
+            <div class="col-md-4 mb-4">
+              <div class="feature-card featured-feature">
+                <div class="feature-icon">
+                  <img src="images/thinkgym/equipment.PNG" alt="Equipment Management" class="feature-image-icon-large">
+                </div>
+                <h3>Equipment Maintenance</h3>
+                <p>Automated maintenance reminders and tracking to keep your equipment in optimal condition.</p>
+              </div>
+            </div>
+            <div class="col-md-4 mb-4">
+              <div class="feature-card featured-feature">
+                <div class="feature-icon">
+                  <img src="images/thinkgym/payments.PNG" alt="Payment Management" class="feature-image-icon-large">
+                </div>
+                <h3>Payment Management</h3>
+                <p>Streamlined payment processing and tracking system for memberships, fees, and transactions.</p>
+              </div>
+            </div>
+          </div>
+          <!-- Rest of Features -->
+          <div class="row">
+            <div class="col-md-6 col-lg-4 mb-4">
+              <div class="feature-card">
+                <div class="feature-icon">👥</div>
+                <h3>Multi-Profile System</h3>
+                <p>Dedicated interfaces for Admin, Staff, and User profiles with role-based access and permissions.</p>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-4">
+              <div class="feature-card">
+                <div class="feature-icon">📊</div>
+                <h3>Real-Time Tracking</h3>
+                <p>Monitor staff members, equipment status, and user activities instantly with comprehensive dashboards.</p>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-4">
+              <div class="feature-card">
+                <div class="feature-icon">🔐</div>
+                <h3>Biometric Attendance</h3>
+                <p>Integrated biometric system for accurate and secure staff attendance tracking.</p>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-4">
+              <div class="feature-card">
+                <div class="feature-icon">📈</div>
+                <h3>User Analytics</h3>
+                <p>Comprehensive user tracking and analytics to understand member behavior and engagement.</p>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-4">
+              <div class="feature-card">
+                <div class="feature-icon">⚡</div>
+                <h3>Instant Updates</h3>
+                <p>Real-time synchronization ensures all data is up-to-date across all devices and profiles.</p>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-4">
+              <div class="feature-card">
+                <div class="feature-icon">🛡️</div>
+                <h3>Secure & Reliable</h3>
+                <p>Enterprise-grade security with reliable data backup and recovery systems.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Screenshots Section - App Store Style Continuous Reel -->
+        <div class="app-screenshots">
+          <h2>Screenshots</h2>
+          <div class="screenshots-reel-container">
+            <div class="screenshots-reel" id="screenshotsReel">
+              <div class="screenshot-item-reel">
+                <img src="images/thinkgym/IMG_7579.PNG" alt="ThinkGym Screenshot" class="screenshot-img-reel">
+              </div>
+              <div class="screenshot-item-reel">
+                <img src="images/thinkgym/IMG_7580.PNG" alt="ThinkGym Screenshot" class="screenshot-img-reel">
+              </div>
+              <div class="screenshot-item-reel">
+                <img src="images/thinkgym/IMG_7581.PNG" alt="ThinkGym Screenshot" class="screenshot-img-reel">
+              </div>
+              <div class="screenshot-item-reel">
+                <img src="images/thinkgym/IMG_7582.PNG" alt="ThinkGym Screenshot" class="screenshot-img-reel">
+              </div>
+              <div class="screenshot-item-reel">
+                <img src="images/thinkgym/IMG_7583.PNG" alt="ThinkGym Screenshot" class="screenshot-img-reel">
+              </div>
+              <div class="screenshot-item-reel">
+                <img src="images/thinkgym/IMG_7585.PNG" alt="ThinkGym Screenshot" class="screenshot-img-reel">
+              </div>
+              <div class="screenshot-item-reel">
+                <img src="images/thinkgym/IMG_7587.PNG" alt="ThinkGym Screenshot" class="screenshot-img-reel">
+              </div>
+              <div class="screenshot-item-reel">
+                <img src="images/thinkgym/IMG_7588.PNG" alt="ThinkGym Screenshot" class="screenshot-img-reel">
+              </div>
+              <div class="screenshot-item-reel">
+                <img src="images/thinkgym/IMG_7589.PNG" alt="ThinkGym Screenshot" class="screenshot-img-reel">
+              </div>
+              <div class="screenshot-item-reel">
+                <img src="images/thinkgym/IMG_7590.PNG" alt="ThinkGym Screenshot" class="screenshot-img-reel">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Landscape Screenshots Section -->
+        <div class="app-screenshots-landscape">
+          <h2>Desktop Screenshots</h2>
+          <div id="landscapeCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#landscapeCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#landscapeCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#landscapeCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="images/thinkgym/Screenshot 2025-12-15 192125.png" alt="ThinkGym Desktop Screenshot 1" class="d-block w-100 screenshot-img-landscape">
+              </div>
+              <div class="carousel-item">
+                <img src="images/thinkgym/Screenshot 2025-12-15 192759.png" alt="ThinkGym Desktop Screenshot 2" class="d-block w-100 screenshot-img-landscape">
+              </div>
+              <div class="carousel-item">
+                <img src="images/thinkgym/Screenshot 2025-12-15 192821.png" alt="ThinkGym Desktop Screenshot 3" class="d-block w-100 screenshot-img-landscape">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#landscapeCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#landscapeCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- CTA Section -->
+        <div class="app-cta">
+          <div class="cta-content">
+            <h2>Ready to Transform Your Gym Management?</h2>
+            <p>Experience the power of comprehensive gym management with ThinkGym</p>
+            <a href="https://wa.me/919652635479" target="_blank" class="btn-cta">Get Started</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End App Detail Section -->
+  </div>
+  <!-- End Landing Page -->
+
+  <!-- Bootstrap JS (with Popper) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Lightbox functionality for screenshots
+    document.querySelectorAll('.screenshot-img-reel, .screenshot-img-landscape').forEach(img => {
+      img.addEventListener('click', function() {
+        const modal = document.createElement('div');
+        modal.className = 'screenshot-modal';
+        modal.innerHTML = `
+          <span class="close-modal">&times;</span>
+          <img src="${this.src}" alt="${this.alt}" class="modal-img">
+        `;
+        document.body.appendChild(modal);
+        document.body.style.overflow = 'hidden';
+
+        modal.querySelector('.close-modal').addEventListener('click', () => {
+          document.body.removeChild(modal);
+          document.body.style.overflow = 'auto';
+        });
+
+        modal.addEventListener('click', (e) => {
+          if (e.target === modal) {
+            document.body.removeChild(modal);
+            document.body.style.overflow = 'auto';
+          }
+        });
+      });
+    });
+  </script>
+</body>
+
+</html>
+
