@@ -1,0 +1,592 @@
+/* Think Gym App Detail Page Styles */
+
+.app-detail-section {
+  padding: 120px 0 60px;
+  background: linear-gradient(180deg, #f9f9f9 0%, #ffffff 100%);
+  min-height: 100vh;
+}
+
+/* First Image Section */
+.first-image-section {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.first-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Hero Section */
+.app-hero {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 40px;
+  margin-bottom: 40px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.app-icon-wrapper {
+  display: inline-block;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 25px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+.app-icon {
+  width: 150px;
+  height: 150px;
+  border-radius: 20px;
+  object-fit: cover;
+  display: block;
+}
+
+.app-name {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: var(--secondary-color);
+  margin-bottom: 10px;
+}
+
+.app-developer {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.app-tagline {
+  font-size: 1.4rem;
+  color: var(--primary-color);
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.app-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.app-badges .badge {
+  background: var(--primary-color);
+  color: #ffffff;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+/* Description Section */
+.app-description {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 40px;
+  margin-bottom: 40px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.app-description h2 {
+  font-size: 2.5rem;
+  color: var(--secondary-color);
+  margin-bottom: 25px;
+  font-weight: 700;
+}
+
+.description-text {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.description-text:last-child {
+  margin-bottom: 0;
+}
+
+/* Features Section */
+.app-features {
+  margin-bottom: 40px;
+}
+
+.app-features h2 {
+  font-size: 2.5rem;
+  color: var(--secondary-color);
+  margin-bottom: 30px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.feature-card {
+  background: #ffffff;
+  border-radius: 15px;
+  padding: 30px;
+  height: 100%;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(255, 80, 85, 0.2);
+}
+
+.feature-icon {
+  font-size: 3rem;
+  margin-bottom: 15px;
+  display: block;
+}
+
+.feature-image-icon {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Featured Features with Large Images */
+.featured-feature {
+  padding: 40px 30px;
+}
+
+.feature-image-icon-large {
+  width: 100%;
+  max-width: 400px;
+  height: 250px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 15px;
+  display: block;
+  margin: 0 auto 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+/* For portrait images zoomed to look landscape */
+.featured-feature .feature-image-icon-large {
+  object-fit: cover;
+  object-position: center top;
+}
+
+.featured-feature:hover .feature-image-icon-large {
+  transform: scale(1.05);
+}
+
+.featured-feature h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.featured-feature p {
+  font-size: 1.1rem;
+}
+
+.feature-card h3 {
+  font-size: 1.3rem;
+  color: var(--secondary-color);
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.feature-card p {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Screenshots Section - App Store Style Continuous Reel */
+.app-screenshots {
+  margin-bottom: 40px;
+}
+
+.app-screenshots h2 {
+  font-size: 2.5rem;
+  color: var(--secondary-color);
+  margin-bottom: 30px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.screenshots-reel-container {
+  overflow-x: auto;
+  overflow-y: hidden;
+  position: relative;
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 30px 0;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  min-height: 650px;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+
+.screenshots-reel-container::-webkit-scrollbar,
+.screenshots-reel::-webkit-scrollbar {
+  display: none;
+}
+
+.screenshots-reel-container,
+.screenshots-reel {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.screenshots-reel {
+  display: flex;
+  gap: 20px;
+  width: max-content;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+
+.screenshots-reel::-webkit-scrollbar {
+  display: none;
+}
+
+.screenshots-reel {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+
+.screenshot-item-reel {
+  flex-shrink: 0;
+  width: 280px;
+  height: 600px;
+  border-radius: 15px;
+  overflow: visible;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.screenshot-item-reel:hover {
+  transform: scale(1.05);
+  z-index: 10;
+  position: relative;
+}
+
+.screenshot-img-reel {
+  width: 100%;
+  height: auto;
+  max-height: 100%;
+  object-fit: contain;
+  display: block;
+  border-radius: 10px;
+}
+
+/* Landscape Screenshots Section */
+.app-screenshots-landscape {
+  margin-bottom: 40px;
+}
+
+.app-screenshots-landscape h2 {
+  font-size: 2.5rem;
+  color: var(--secondary-color);
+  margin-bottom: 30px;
+  font-weight: 700;
+  text-align: center;
+}
+
+#landscapeCarousel {
+  max-width: 1200px;
+  margin: 0 auto;
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.carousel-inner {
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.screenshot-img-landscape {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+  max-height: 70vh;
+}
+
+/* Desktop screenshots - landscape and center aligned */
+@media (min-width: 992px) {
+  .screenshot-img-landscape {
+    max-width: 100%;
+    max-height: 600px;
+    object-fit: contain;
+    margin: 0 auto;
+  }
+  
+  .carousel-item {
+    text-align: center;
+  }
+  
+  .carousel-item img {
+    margin: 0 auto;
+  }
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 50px;
+  height: 50px;
+  background: var(--primary-color);
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+.carousel-control-prev {
+  left: 20px;
+}
+
+.carousel-control-next {
+  right: 20px;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  opacity: 1;
+}
+
+.carousel-indicators {
+  margin-bottom: 20px;
+}
+
+.carousel-indicators button {
+  background-color: var(--primary-color);
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin: 0 5px;
+}
+
+/* Screenshot Modal */
+.screenshot-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  padding: 20px;
+}
+
+.close-modal {
+  position: absolute;
+  top: 30px;
+  right: 40px;
+  color: #ffffff;
+  font-size: 3rem;
+  font-weight: 300;
+  cursor: pointer;
+  line-height: 1;
+  transition: color 0.3s ease;
+}
+
+.close-modal:hover {
+  color: var(--primary-color);
+}
+
+.modal-img {
+  max-width: 90%;
+  max-height: 90vh;
+  border-radius: 10px;
+  object-fit: contain;
+}
+
+/* CTA Section */
+.app-cta {
+  background: linear-gradient(135deg, var(--primary-color) 0%, #ff6b6f 100%);
+  border-radius: 20px;
+  padding: 60px 40px;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 40px;
+}
+
+.cta-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.cta-content p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  opacity: 0.95;
+}
+
+.btn-cta {
+  display: inline-block;
+  background: #ffffff;
+  color: var(--primary-color);
+  padding: 15px 40px;
+  border-radius: 30px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.btn-cta:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+  color: var(--primary-color);
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .app-name {
+    font-size: 2.5rem;
+  }
+
+  .app-description h2,
+  .app-features h2,
+  .app-screenshots h2 {
+    font-size: 2rem;
+  }
+
+}
+
+@media (max-width: 768px) {
+  .app-detail-section {
+    padding: 100px 0 40px;
+  }
+
+  .first-image {
+    border-radius: 15px;
+  }
+
+  .app-hero {
+    padding: 30px 20px;
+    text-align: center;
+  }
+
+  .app-icon {
+    width: 120px;
+    height: 120px;
+  }
+
+  .app-name {
+    font-size: 2rem;
+  }
+
+  .app-tagline {
+    font-size: 1.1rem;
+  }
+
+  .app-description,
+  .feature-card {
+    padding: 25px 20px;
+  }
+
+  .featured-feature {
+    padding: 30px 20px;
+  }
+
+  .feature-image-icon-large {
+    max-width: 100%;
+    height: 180px;
+  }
+
+  .featured-feature h3 {
+    font-size: 1.3rem;
+  }
+
+  .featured-feature p {
+    font-size: 1rem;
+  }
+
+  .app-description h2,
+  .app-features h2,
+  .app-screenshots h2,
+  .app-screenshots-landscape h2 {
+    font-size: 1.75rem;
+  }
+
+  .description-text {
+    font-size: 1rem;
+  }
+
+  .screenshot-item-reel {
+    width: 200px;
+    height: 450px;
+  }
+
+  .screenshots-reel-container {
+    min-height: 500px;
+  }
+
+  .screenshots-reel {
+    gap: 15px;
+  }
+
+
+  .app-cta {
+    padding: 40px 20px;
+  }
+
+  .cta-content h2 {
+    font-size: 1.75rem;
+  }
+
+  .cta-content p {
+    font-size: 1rem;
+  }
+
+  .close-modal {
+    top: 20px;
+    right: 20px;
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .app-name {
+    font-size: 1.75rem;
+  }
+
+  .app-description h2,
+  .app-features h2,
+  .app-screenshots h2,
+  .app-screenshots-landscape h2 {
+    font-size: 1.5rem;
+  }
+
+  .screenshot-item-reel {
+    width: 180px;
+    height: 400px;
+  }
+
+  .screenshots-reel-container {
+    min-height: 450px;
+  }
+
+  .feature-image-icon-large {
+    height: 150px;
+  }
+}
+
