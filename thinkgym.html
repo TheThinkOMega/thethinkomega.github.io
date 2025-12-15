@@ -279,28 +279,47 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <script>
     // Lightbox functionality for screenshots
+    function closeModal(modal) {
+      if (modal && modal.parentNode) {
+        modal.parentNode.removeChild(modal);
+      }
+      // Only restore overflow if no modals remain
+      const remainingModals = document.querySelectorAll('.screenshot-modal');
+      if (remainingModals.length === 0) {
+        document.body.style.overflow = 'auto';
+      }
+    }
+
+    function openModal(imgSrc, imgAlt) {
+      // Check if a modal already exists - prevent multiple modals
+      const existingModal = document.querySelector('.screenshot-modal');
+      if (existingModal) {
+        return; // Don't create a new modal if one already exists
+      }
+
+      const modal = document.createElement('div');
+      modal.className = 'screenshot-modal';
+      modal.innerHTML = `
+        <span class="close-modal">&times;</span>
+        <img src="${imgSrc}" alt="${imgAlt}" class="modal-img">
+      `;
+      document.body.appendChild(modal);
+      document.body.style.overflow = 'hidden';
+
+      modal.querySelector('.close-modal').addEventListener('click', () => {
+        closeModal(modal);
+      });
+
+      modal.addEventListener('click', (e) => {
+        if (e.target === modal) {
+          closeModal(modal);
+        }
+      });
+    }
+
     document.querySelectorAll('.screenshot-img-reel, .screenshot-img-landscape').forEach(img => {
       img.addEventListener('click', function() {
-        const modal = document.createElement('div');
-        modal.className = 'screenshot-modal';
-        modal.innerHTML = `
-          <span class="close-modal">&times;</span>
-          <img src="${this.src}" alt="${this.alt}" class="modal-img">
-        `;
-        document.body.appendChild(modal);
-        document.body.style.overflow = 'hidden';
-
-        modal.querySelector('.close-modal').addEventListener('click', () => {
-          document.body.removeChild(modal);
-          document.body.style.overflow = 'auto';
-        });
-
-        modal.addEventListener('click', (e) => {
-          if (e.target === modal) {
-            document.body.removeChild(modal);
-            document.body.style.overflow = 'auto';
-          }
-        });
+        openModal(this.src, this.alt);
       });
     });
   </script>
