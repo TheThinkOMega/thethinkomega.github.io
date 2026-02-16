@@ -1,0 +1,90 @@
+[12/02/26, 10:33:25 PM] MTGK Mckinney: Home page sections (tell the dev to implement exactly)
+
+Hero
+
+1 sentence: “We build X for Y” (no vague slogans)
+
+2 CTAs: “Book a call” + “View work”
+
+Trust strip
+
+Client logos OR “# years / # projects / industries” (real numbers only)
+
+Services (6 cards max)
+
+Each card: 1-line benefit + “Learn more”
+
+Featured case studies (2–3)
+
+Problem → solution → measurable outcome (even small)
+
+Process (4 steps)
+
+Discover → Design → Build → Launch/Support
+
+Testimonials
+
+2–4 quotes with name/title/company (real)
+
+Final CTA block
+
+“Tell us your idea” + short form
+
+Visual/UI standards (specific instructions)
+
+Typography:
+
+Use 1–2 fonts max (e.g., Inter + a display font)
+
+Set a clear scale (H1/H2/body) and keep it consistent
+
+Layout:
+
+Use a 12-column grid
+
+Keep section padding consistent (e.g., 80–120px desktop)
+
+Avoid long paragraphs; max ~2–3 lines per block
+
+Components:
+
+Primary button style consistent everywhere
+
+Cards: same radius, shadow, hover state
+
+Imagery:
+
+Replace generic stock photos with:
+
+abstract tech illustrations
+
+product screenshots
+
+simple iconography
+
+Keep a consistent illustration style across pages
+[12/02/26, 10:34:16 PM] MTGK Mckinney: Content upgrades 
+
+Replace generic phrases like “Your search ends here” with clear value statements and specific offerings.
+
+Services should be described like Ontik does: custom software, web/mobile, UI/UX, AI/ML, BI, security etc., but only keep what you actually deliver.
+
+Add credibility:
+
+“Our process” page
+
+“Why us” section: security, delivery, SLAs, support model
+Rebuild the site with a modern agency layout like Ontik (mentioned above) : clean hero with 2 CTAs, services cards, 2–3 case studies with outcomes, process steps, testimonials, and strong final CTA. Use consistent typography + spacing, reduce clutter, improve performance/SEO/accessibility. Keep navigation to Home/Services/Work/About/Process/Contact.
+Reduce “busy/stocky” feel: fewer sections, more whitespace, stronger hierarchy. (our site)
+
+Use Ontik’s vibe as the benchmark: clean, modern, spacious, consistent typography, strong CTAs, and clear service positioning
+https://www.ontiktechnology.com/?utm_source=chatgpt.com
+
+Site structure (recommended pages)
+Home
+Services (detail page + individual service sections)
+Work / Case Studies (not just logos/screens—add outcomes)
+About
+Process
+Blog/Insights (optional)
+Contact

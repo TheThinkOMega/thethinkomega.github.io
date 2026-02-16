@@ -1,392 +1,359 @@
-/* Think Gym App Detail Page Styles */
+/* ============================================
+   ThinkGym — Product Page Styles
+   Uses design tokens from style.css
+   ============================================ */
 
-.app-detail-section {
-  padding: 120px 0 60px;
-  background: linear-gradient(180deg, #f9f9f9 0%, #ffffff 100%);
-  min-height: 100vh;
+/* --- Product Hero --- */
+.tg-hero {
+  padding: 160px 0 var(--section-py);
+  background: var(--bg);
+  position: relative;
+  overflow: hidden;
 }
 
-/* First Image Section */
-.first-image-section {
-  text-align: center;
-  margin-bottom: 40px;
+.tg-hero-content {
+  max-width: 600px;
 }
 
-.first-image {
-  max-width: 1536px;
-  width: 100%;
-  height: auto;
-  border-radius: 20px;
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
-}
-
-/* Hero Section */
-.app-hero {
-  background: #ffffff;
-  border-radius: 20px;
-  padding: 40px;
-  margin-bottom: 40px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-}
-
-.app-icon-wrapper {
-  display: inline-block;
-  padding: 20px;
-  background: #ffffff;
-  border-radius: 25px;
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
-}
-
-.app-icon {
-  width: 150px;
-  height: 150px;
-  border-radius: 20px;
-  object-fit: cover;
-  display: block;
-}
-
-.app-name {
-  font-size: 3.5rem;
-  font-weight: 700;
-  color: var(--secondary-color);
-  margin-bottom: 10px;
-}
-
-.app-developer {
-  font-size: 1.2rem;
-  color: #666;
-  margin-bottom: 15px;
-}
-
-.app-tagline {
-  font-size: 1.4rem;
-  color: var(--primary-color);
-  font-weight: 600;
-  margin-bottom: 20px;
-}
-
-.app-badges {
+.tg-hero-brand {
   display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 8px;
 }
 
-.app-badges .badge {
-  background: var(--primary-color);
-  color: #ffffff;
-  padding: 8px 16px;
-  border-radius: 20px;
-  font-size: 0.9rem;
-  font-weight: 500;
-}
-
-/* Description Section */
-.app-description {
-  background: #ffffff;
-  border-radius: 20px;
-  padding: 40px;
-  margin-bottom: 40px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-}
-
-.app-description h2 {
-  font-size: 2.5rem;
-  color: var(--secondary-color);
-  margin-bottom: 25px;
-  font-weight: 700;
-}
-
-.description-text {
-  font-size: 1.1rem;
-  line-height: 1.8;
-  color: #333;
-  margin-bottom: 20px;
-}
-
-.description-text:last-child {
-  margin-bottom: 0;
-}
-
-/* Features Section */
-.app-features {
-  margin-bottom: 40px;
-}
-
-.app-features h2 {
-  font-size: 2.5rem;
-  color: var(--secondary-color);
-  margin-bottom: 30px;
-  font-weight: 700;
-  text-align: center;
-}
-
-.feature-card {
-  background: #ffffff;
-  border-radius: 15px;
-  padding: 30px;
-  height: 100%;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
-  transition: all 0.3s ease;
-  text-align: center;
-}
-
-.feature-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 25px rgba(255, 80, 85, 0.2);
-}
-
-.feature-icon {
-  font-size: 3rem;
-  margin-bottom: 15px;
-  display: block;
-}
-
-.feature-image-icon {
-  width: 60px;
-  height: 60px;
-  object-fit: contain;
-  display: block;
-  margin: 0 auto;
-}
-
-/* Featured Features with Large Images */
-.featured-feature {
-  padding: 40px 30px;
-}
-
-.feature-image-icon-large {
-  width: 100%;
-  max-width: 400px;
-  height: 250px;
+.tg-hero-logo {
+  width: 64px;
+  height: 64px;
+  border-radius: var(--radius-lg);
   object-fit: cover;
-  object-position: center;
-  border-radius: 15px;
-  display: block;
-  margin: 0 auto 20px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
+  box-shadow: var(--shadow-md);
 }
 
-/* For portrait images zoomed to look landscape */
-.featured-feature .feature-image-icon-large {
-  object-fit: cover;
-  object-position: center top;
-}
-
-.featured-feature:hover .feature-image-icon-large {
-  transform: scale(1.05);
-}
-
-.featured-feature h3 {
-  font-size: 1.5rem;
-  margin-bottom: 15px;
-}
-
-.featured-feature p {
-  font-size: 1.1rem;
-}
-
-.feature-card h3 {
-  font-size: 1.3rem;
-  color: var(--secondary-color);
-  margin-bottom: 15px;
-  font-weight: 600;
-}
-
-.feature-card p {
-  font-size: 1rem;
-  color: #666;
-  line-height: 1.6;
+.tg-hero-brand h1 {
+  font-size: clamp(2.5rem, 5vw, 3.75rem);
+  font-weight: 800;
+  letter-spacing: -0.02em;
   margin: 0;
 }
 
-/* Screenshots Section - App Store Style Continuous Reel */
-.app-screenshots {
-  margin-bottom: 40px;
+.tg-hero-tagline {
+  font-size: var(--text-xl);
+  font-weight: 600;
+  color: var(--primary);
+  margin-bottom: 16px;
 }
 
-.app-screenshots h2 {
-  font-size: 2.5rem;
-  color: var(--secondary-color);
-  margin-bottom: 30px;
-  font-weight: 700;
-  text-align: center;
+.tg-hero .hero-subtitle {
+  font-size: var(--text-lg);
+  color: var(--text-light);
+  line-height: 1.7;
+  margin-bottom: 24px;
 }
 
-.screenshots-reel-container {
-  overflow-x: auto;
-  overflow-y: hidden;
-  position: relative;
-  background: #ffffff;
-  border-radius: 20px;
-  padding: 30px 0;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-  min-height: 650px;
-  scroll-behavior: smooth;
-  -webkit-overflow-scrolling: touch;
-}
-
-.screenshots-reel-container::-webkit-scrollbar,
-.screenshots-reel::-webkit-scrollbar {
-  display: none;
-}
-
-.screenshots-reel-container,
-.screenshots-reel {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-}
-
-.screenshots-reel {
+.tg-badges {
   display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tg-badge {
+  display: inline-block;
+  background: var(--primary-light);
+  color: var(--primary);
+  font-size: var(--text-xs);
+  font-weight: 600;
+  padding: 6px 14px;
+  border-radius: var(--radius-full);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.tg-hero-image {
+  position: relative;
+}
+
+.tg-hero-image img {
+  width: 100%;
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-xl);
+}
+
+
+/* --- About Section: Profile Cards --- */
+.tg-about-visual {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.tg-profile-card {
+  display: flex;
+  align-items: flex-start;
   gap: 20px;
-  width: max-content;
-  overflow-x: auto;
-  scroll-behavior: smooth;
-  -webkit-overflow-scrolling: touch;
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+  transition: var(--transition);
 }
 
-.screenshots-reel::-webkit-scrollbar {
-  display: none;
+.tg-profile-card:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
 }
 
-.screenshots-reel {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-}
-
-
-.screenshot-item-reel {
-  flex-shrink: 0;
-  width: 280px;
-  height: 600px;
-  border-radius: 15px;
-  overflow: visible;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  cursor: pointer;
-  transition: transform 0.3s ease;
-  background: #ffffff;
+.tg-profile-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: var(--radius);
+  background: var(--primary-light);
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 10px;
+  color: var(--primary);
+  flex-shrink: 0;
 }
 
-.screenshot-item-reel:hover {
+.tg-profile-icon svg {
+  width: 24px;
+  height: 24px;
+}
+
+.tg-profile-card h4 {
+  font-size: var(--text-base);
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.tg-profile-card p {
+  font-size: var(--text-sm);
+  color: var(--text-light);
+  margin: 0;
+}
+
+
+/* --- Feature Cards --- */
+.tg-feature-card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 32px 24px;
+  height: 100%;
+  transition: var(--transition);
+  display: flex;
+  flex-direction: column;
+}
+
+.tg-feature-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+  border-color: transparent;
+}
+
+.tg-feature-card .icon-wrap {
+  width: 56px;
+  height: 56px;
+  border-radius: var(--radius);
+  background: var(--primary-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  color: var(--primary);
+  flex-shrink: 0;
+}
+
+.tg-feature-card .icon-wrap svg {
+  width: 28px;
+  height: 28px;
+}
+
+.tg-feature-card h3 {
+  font-size: var(--text-xl);
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.tg-feature-card p {
+  font-size: var(--text-sm);
+  color: var(--text-light);
+  line-height: 1.7;
+  margin: 0;
+  flex-grow: 1;
+}
+
+/* Featured feature cards with images */
+.tg-feature-featured {
+  text-align: center;
+  padding: 0;
+  overflow: hidden;
+}
+
+.tg-feature-featured h3,
+.tg-feature-featured p {
+  padding: 0 24px;
+}
+
+.tg-feature-featured h3 {
+  padding-top: 24px;
+}
+
+.tg-feature-featured p {
+  padding-bottom: 28px;
+}
+
+.tg-feature-img {
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+  background: var(--bg-alt);
+}
+
+.tg-feature-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  transition: transform 0.4s ease;
+}
+
+.tg-feature-featured:hover .tg-feature-img img {
   transform: scale(1.05);
-  z-index: 10;
-  position: relative;
 }
 
-.screenshot-img-reel {
+
+/* --- Mobile Screenshots Reel --- */
+.tg-screenshots-reel-wrap {
+  overflow-x: auto;
+  overflow-y: hidden;
+  border-radius: var(--radius-xl);
+  background: var(--bg-alt);
+  padding: 32px 24px;
+  border: 1px solid var(--border);
+  -webkit-overflow-scrolling: touch;
+}
+
+.tg-screenshots-reel-wrap::-webkit-scrollbar {
+  height: 6px;
+}
+
+.tg-screenshots-reel-wrap::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.tg-screenshots-reel-wrap::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 3px;
+}
+
+.tg-screenshots-reel {
+  display: flex;
+  gap: 20px;
+  width: max-content;
+}
+
+.tg-screenshot-item {
+  flex-shrink: 0;
+  width: 260px;
+  height: 560px;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  background: var(--white);
+  cursor: pointer;
+  transition: var(--transition);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+}
+
+.tg-screenshot-item:hover {
+  transform: scale(1.03);
+  box-shadow: var(--shadow-lg);
+}
+
+.tg-screenshot-img {
   width: 100%;
   height: auto;
   max-height: 100%;
   object-fit: contain;
-  display: block;
-  border-radius: 10px;
+  border-radius: var(--radius);
 }
 
-/* Landscape Screenshots Section */
-.app-screenshots-landscape {
-  margin-bottom: 40px;
-}
 
-.app-screenshots-landscape h2 {
-  font-size: 2.5rem;
-  color: var(--secondary-color);
-  margin-bottom: 30px;
-  font-weight: 700;
-  text-align: center;
-}
-
-#landscapeCarousel {
-  max-width: 1200px;
+/* --- Desktop Screenshots Carousel --- */
+.tg-desktop-carousel {
+  max-width: 1000px;
   margin: 0 auto;
-  background: #ffffff;
-  border-radius: 20px;
-  padding: 30px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  background: var(--white);
+  border-radius: var(--radius-xl);
+  padding: 24px;
+  box-shadow: var(--shadow-md);
+  border: 1px solid var(--border);
 }
 
-.carousel-inner {
-  border-radius: 15px;
+.tg-desktop-carousel .carousel-inner {
+  border-radius: var(--radius-lg);
   overflow: hidden;
 }
 
-.screenshot-img-landscape {
+.tg-desktop-img {
   width: 100%;
   height: auto;
   object-fit: contain;
   cursor: pointer;
-  display: block;
-  margin: 0 auto;
-  max-height: 70vh;
+  max-height: 560px;
 }
 
-/* Desktop screenshots - landscape and center aligned */
-@media (min-width: 992px) {
-  .screenshot-img-landscape {
-    max-width: 100%;
-    max-height: 600px;
-    object-fit: contain;
-    margin: 0 auto;
-  }
-  
-  .carousel-item {
-    text-align: center;
-  }
-  
-  .carousel-item img {
-    margin: 0 auto;
-  }
-}
-
-.carousel-control-prev,
-.carousel-control-next {
-  width: 50px;
-  height: 50px;
-  background: var(--primary-color);
+.tg-desktop-carousel .carousel-control-prev,
+.tg-desktop-carousel .carousel-control-next {
+  width: 44px;
+  height: 44px;
+  background: var(--primary);
   border-radius: 50%;
   top: 50%;
   transform: translateY(-50%);
-  opacity: 0.8;
-  transition: opacity 0.3s ease;
+  opacity: 0.85;
+  transition: var(--transition-fast);
 }
 
-.carousel-control-prev {
-  left: 20px;
-}
+.tg-desktop-carousel .carousel-control-prev { left: -22px; }
+.tg-desktop-carousel .carousel-control-next { right: -22px; }
 
-.carousel-control-next {
-  right: 20px;
-}
-
-.carousel-control-prev:hover,
-.carousel-control-next:hover {
+.tg-desktop-carousel .carousel-control-prev:hover,
+.tg-desktop-carousel .carousel-control-next:hover {
   opacity: 1;
 }
 
-.carousel-indicators {
-  margin-bottom: 20px;
+.tg-desktop-carousel .carousel-indicators {
+  margin-bottom: 0;
+  bottom: -8px;
 }
 
-.carousel-indicators button {
-  background-color: var(--primary-color);
-  width: 12px;
-  height: 12px;
+.tg-desktop-carousel .carousel-indicators button {
+  background-color: var(--primary);
+  width: 10px;
+  height: 10px;
   border-radius: 50%;
-  margin: 0 5px;
+  margin: 0 4px;
+  opacity: 0.4;
 }
 
-/* Screenshot Modal */
-.screenshot-modal {
+.tg-desktop-carousel .carousel-indicators button.active {
+  opacity: 1;
+}
+
+
+/* --- Lightbox --- */
+.tg-lightbox {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.9);
+  background: rgba(0, 0, 0, 0.92);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -394,200 +361,91 @@
   padding: 20px;
 }
 
-.close-modal {
-  position: absolute;
-  top: 30px;
-  right: 40px;
-  color: #ffffff;
-  font-size: 3rem;
-  font-weight: 300;
-  cursor: pointer;
-  line-height: 1;
-  transition: color 0.3s ease;
-}
-
-.close-modal:hover {
-  color: var(--primary-color);
-}
-
-.modal-img {
+.tg-lightbox img {
   max-width: 90%;
   max-height: 90vh;
-  border-radius: 10px;
+  border-radius: var(--radius);
   object-fit: contain;
 }
 
-/* CTA Section */
-.app-cta {
-  background: linear-gradient(135deg, var(--primary-color) 0%, #ff6b6f 100%);
-  border-radius: 20px;
-  padding: 60px 40px;
-  text-align: center;
-  color: #ffffff;
-  margin-bottom: 40px;
-}
-
-.cta-content h2 {
+.tg-lightbox-close {
+  position: absolute;
+  top: 24px;
+  right: 32px;
+  color: var(--white);
   font-size: 2.5rem;
-  margin-bottom: 20px;
-  font-weight: 700;
+  font-weight: 300;
+  cursor: pointer;
+  line-height: 1;
+  transition: color 0.2s ease;
 }
 
-.cta-content p {
-  font-size: 1.2rem;
-  margin-bottom: 30px;
-  opacity: 0.95;
+.tg-lightbox-close:hover {
+  color: var(--primary);
 }
 
-.btn-cta {
-  display: inline-block;
-  background: #ffffff;
-  color: var(--primary-color);
-  padding: 15px 40px;
-  border-radius: 30px;
-  font-size: 1.1rem;
-  font-weight: 600;
-  text-decoration: none;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-}
 
-.btn-cta:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
-  color: var(--primary-color);
-}
-
-/* Responsive Design */
-@media (max-width: 992px) {
-  .app-name {
-    font-size: 2.5rem;
+/* --- Responsive --- */
+@media (max-width: 991px) {
+  .tg-hero {
+    padding: 140px 0 80px;
   }
 
-  .app-description h2,
-  .app-features h2,
-  .app-screenshots h2 {
-    font-size: 2rem;
+  .tg-hero-brand h1 {
+    font-size: clamp(2rem, 5vw, 2.75rem);
   }
 
+  .tg-hero-image {
+    margin-top: 48px;
+  }
+
+  .tg-desktop-carousel .carousel-control-prev { left: 8px; }
+  .tg-desktop-carousel .carousel-control-next { right: 8px; }
 }
 
-@media (max-width: 768px) {
-  .app-detail-section {
-    padding: 100px 0 40px;
-  }
-
-  .first-image {
-    border-radius: 15px;
-  }
-
-  .app-hero {
-    padding: 30px 20px;
+@media (max-width: 767px) {
+  .tg-hero {
+    padding: 120px 0 60px;
     text-align: center;
   }
 
-  .app-icon {
-    width: 120px;
-    height: 120px;
-  }
-
-  .app-name {
-    font-size: 2rem;
-  }
-
-  .app-tagline {
-    font-size: 1.1rem;
-  }
-
-  .app-description,
-  .feature-card {
-    padding: 25px 20px;
-  }
-
-  .featured-feature {
-    padding: 30px 20px;
-  }
-
-  .feature-image-icon-large {
+  .tg-hero-content {
     max-width: 100%;
+  }
+
+  .tg-hero-brand {
+    justify-content: center;
+  }
+
+  .tg-badges {
+    justify-content: center;
+  }
+
+  .tg-hero .btn-group {
+    justify-content: center;
+  }
+
+  .tg-screenshot-item {
+    width: 200px;
+    height: 430px;
+  }
+
+  .tg-feature-img {
     height: 180px;
   }
 
-  .featured-feature h3 {
-    font-size: 1.3rem;
-  }
-
-  .featured-feature p {
-    font-size: 1rem;
-  }
-
-  .app-description h2,
-  .app-features h2,
-  .app-screenshots h2,
-  .app-screenshots-landscape h2 {
-    font-size: 1.75rem;
-  }
-
-  .description-text {
-    font-size: 1rem;
-  }
-
-  .screenshot-item-reel {
-    width: 200px;
-    height: 450px;
-  }
-
-  .screenshots-reel-container {
-    min-height: 500px;
-  }
-
-  .screenshots-reel {
-    gap: 15px;
-  }
-
-
-  .app-cta {
-    padding: 40px 20px;
-  }
-
-  .cta-content h2 {
-    font-size: 1.75rem;
-  }
-
-  .cta-content p {
-    font-size: 1rem;
-  }
-
-  .close-modal {
-    top: 20px;
-    right: 20px;
-    font-size: 2.5rem;
+  .tg-desktop-carousel {
+    padding: 16px;
   }
 }
 
-@media (max-width: 576px) {
-  .app-name {
-    font-size: 1.75rem;
-  }
-
-  .app-description h2,
-  .app-features h2,
-  .app-screenshots h2,
-  .app-screenshots-landscape h2 {
-    font-size: 1.5rem;
-  }
-
-  .screenshot-item-reel {
+@media (max-width: 575px) {
+  .tg-screenshot-item {
     width: 180px;
-    height: 400px;
+    height: 390px;
   }
 
-  .screenshots-reel-container {
-    min-height: 450px;
-  }
-
-  .feature-image-icon-large {
+  .tg-feature-img {
     height: 150px;
   }
 }
-
