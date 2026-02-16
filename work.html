@@ -3,120 +3,261 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>ThinkOMega</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Normalize CSS -->
-  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css'>
-  <!-- Bootstrap CSS -->
+  <title>Our Work — ThinkOMega</title>
+  <meta name="description"
+    content="See how ThinkOMega has helped businesses solve real problems with custom software, AI, and cloud solutions. Case studies with measurable outcomes.">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5 -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Google Fonts (JetBrains Mono) -->
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
-  <!-- Communal CSS -->
-  <link rel="stylesheet" href="style.css" !important>
-  <!-- work CSS -->
-  <link rel="stylesheet" href="work.css">
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+
   <!-- Favicon -->
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-  <!--Script -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
 <body>
-  <!-- Start Landing Page -->
-  <div class="landing-page">
-    <!-- Header -->
-    <header>
-      <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
-        <div class="container">
-          <a class="navbar-brand d-flex align-items-center" href="index.html">
-            <img src="images/LOGO.png" alt="ThinkOMega Logo" width="50" height="50"
-              class="d-inline-block align-text-top">
-            <div class="logotext ms-2">
-              <h1 class="mb-0" style="font-size:1.5rem;">
-                Think<b>OMega</b>
-              </h1>
+
+  <!-- ===== Navbar ===== -->
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="images/LOGO.png" alt="ThinkOMega" width="40" height="40">
+        <span class="brand-text"><b>Think</b><span class="brand-accent">OMega</span></span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+        aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="mainNav">
+        <ul class="navbar-nav align-items-lg-center">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link active" href="work.html">Work</a></li>
+          <li class="nav-item"><a class="nav-link" href="thinkgym.html">ThinkGym</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="process.html">Process</a></li>
+          <li class="nav-item"><a class="nav-link nav-cta" href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <main>
+
+    <!-- ===== Page Header ===== -->
+    <section class="page-header">
+      <div class="container fade-up">
+        <span class="label">Our Work</span>
+        <h1>Case Studies &amp; Projects</h1>
+        <p>Real problems, real solutions, measurable outcomes. Here's how we've helped our clients succeed.</p>
+      </div>
+    </section>
+
+
+    <!-- ===== Case Studies ===== -->
+    <section class="section">
+      <div class="container">
+
+        <!-- Case Study 1: ThinkGym -->
+        <div class="case-detail fade-up">
+          <div class="row g-0">
+            <div class="col-lg-5">
+              <div class="case-detail-img d-flex align-items-center justify-content-center"
+                style="height:100%;min-height:300px;background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);">
+                <img src="images/thinkgym/logo.webp" alt="ThinkGym"
+                  style="width:100px;height:100px;object-fit:contain;border-radius:20px;">
+              </div>
             </div>
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-            <ul class="navbar-nav links">
-              <!-- <li class="nav-item">
-                <a class="nav-link" href="index.html">Home</a>
-              </li> -->
-              <li class="nav-item">
-                <a class="nav-link" href="about.html">About Us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="work.html">Work</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="thinkgym.html">ThinkGym</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="advisors.html">Advisors</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link btn-get-started" href="#">Contact Us</a>
-              </li>
+            <div class="col-lg-7">
+              <div class="case-detail-body">
+                <span class="case-card-tag">Fitness &amp; Wellness</span>
+                <h3>ThinkGym — All-in-One Gym Management</h3>
+                <p class="lead-text"><strong>Problem:</strong> Gym owners were managing operations manually — paper logs,
+                  spreadsheets for payments, and WhatsApp for member communication.</p>
+                <p class="lead-text"><strong>Solution:</strong> We built a comprehensive management platform with member
+                  tracking, payment processing, equipment management, and scheduling — all in one intuitive interface.</p>
+                <p class="lead-text"><strong>Outcome:</strong> Gym operations streamlined from day one. Owners report
+                  significantly less time on admin work, better member retention through automated reminders, and clearer
+                  financial visibility.</p>
+                <div class="case-detail-meta">
+                  <div class="case-detail-meta-item">
+                    <h4>Industry</h4>
+                    <p>Fitness &amp; Wellness</p>
+                  </div>
+                  <div class="case-detail-meta-item">
+                    <h4>Services</h4>
+                    <p>Web &amp; Mobile, UI/UX</p>
+                  </div>
+                  <div class="case-detail-meta-item">
+                    <h4>Result</h4>
+                    <p>40% less admin time</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Case Study 2: Cloud Migration -->
+        <div class="case-detail fade-up">
+          <div class="row g-0">
+            <div class="col-lg-5 order-lg-2">
+              <div class="case-detail-img d-flex align-items-center justify-content-center"
+                style="height:100%;min-height:300px;background:linear-gradient(135deg,#f093fb 0%,#f5576c 100%);">
+                <i data-lucide="cloud" style="width:80px;height:80px;color:#fff;"></i>
+              </div>
+            </div>
+            <div class="col-lg-7 order-lg-1">
+              <div class="case-detail-body">
+                <span class="case-card-tag">Enterprise</span>
+                <h3>Enterprise Cloud Infrastructure Migration</h3>
+                <p class="lead-text"><strong>Problem:</strong> Legacy on-premise systems were causing frequent downtime,
+                  slow performance, and escalating maintenance costs.</p>
+                <p class="lead-text"><strong>Solution:</strong> We executed a full cloud migration with automated
+                  disaster recovery, load balancing, and 24/7 monitoring — zero-downtime cutover.</p>
+                <p class="lead-text"><strong>Outcome:</strong> Systems are faster, more reliable, and significantly
+                  cheaper to maintain. Business continuity is now fully automated.</p>
+                <div class="case-detail-meta">
+                  <div class="case-detail-meta-item">
+                    <h4>Industry</h4>
+                    <p>Technology</p>
+                  </div>
+                  <div class="case-detail-meta-item">
+                    <h4>Services</h4>
+                    <p>Cloud, Architecture</p>
+                  </div>
+                  <div class="case-detail-meta-item">
+                    <h4>Result</h4>
+                    <p>99.9% uptime</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Case Study 3: AI Analytics -->
+        <div class="case-detail fade-up">
+          <div class="row g-0">
+            <div class="col-lg-5">
+              <div class="case-detail-img d-flex align-items-center justify-content-center"
+                style="height:100%;min-height:300px;background:linear-gradient(135deg,#4facfe 0%,#00f2fe 100%);">
+                <i data-lucide="brain-circuit" style="width:80px;height:80px;color:#fff;"></i>
+              </div>
+            </div>
+            <div class="col-lg-7">
+              <div class="case-detail-body">
+                <span class="case-card-tag">AI / Analytics</span>
+                <h3>AI-Powered Business Analytics Platform</h3>
+                <p class="lead-text"><strong>Problem:</strong> Manual data analysis was taking weeks, and critical business
+                  insights were being delayed or missed entirely.</p>
+                <p class="lead-text"><strong>Solution:</strong> We developed a custom ML pipeline that ingests data from
+                  multiple sources, runs automated analysis, and surfaces actionable insights through an intuitive
+                  dashboard.</p>
+                <p class="lead-text"><strong>Outcome:</strong> Analysis that previously took weeks now completes in
+                  hours. Decision-makers have real-time access to the metrics that matter most.</p>
+                <div class="case-detail-meta">
+                  <div class="case-detail-meta-item">
+                    <h4>Industry</h4>
+                    <p>Data &amp; Analytics</p>
+                  </div>
+                  <div class="case-detail-meta-item">
+                    <h4>Services</h4>
+                    <p>AI &amp; ML, Custom Software</p>
+                  </div>
+                  <div class="case-detail-meta-item">
+                    <h4>Result</h4>
+                    <p>80% faster analysis</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ===== CTA ===== -->
+    <section class="cta-section">
+      <div class="container">
+        <div class="cta-content fade-up">
+          <h2>Have a Similar Challenge?</h2>
+          <p>Let's discuss how we can solve it for you.</p>
+          <div class="btn-group justify-content-center">
+            <a href="contact.html" class="btn-white">Start a Conversation</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- ===== Footer ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="row g-4">
+          <div class="col-lg-4">
+            <div class="footer-brand">
+              <span class="brand-text"><b>Think</b><span class="brand-accent">OMega</span></span>
+            </div>
+            <p class="footer-desc">Building intelligent software solutions that help businesses scale, innovate, and
+              lead in their industries.</p>
+          </div>
+          <div class="col-6 col-lg-2">
+            <h4 class="footer-heading">Company</h4>
+            <ul class="footer-links">
+              <li><a href="about.html">About</a></li>
+              <li><a href="process.html">Process</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-lg-2">
+            <h4 class="footer-heading">Services</h4>
+            <ul class="footer-links">
+              <li><a href="services.html#custom-software">Custom Software</a></li>
+              <li><a href="services.html#ai-ml">AI &amp; ML</a></li>
+              <li><a href="services.html#cloud">Cloud</a></li>
+              <li><a href="services.html#consultation">Consultation</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-4">
+            <h4 class="footer-heading">Get in Touch</h4>
+            <ul class="footer-links">
+              <li><a href="mailto:contact@thethinkomega.com">contact@thethinkomega.com</a></li>
+              <li><a href="contact.html">Book a consultation</a></li>
             </ul>
           </div>
         </div>
-      </nav>
-    </header>
-    <!-- End Header -->
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 ThinkOMega IT Solutions Pvt Ltd. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
 
-    <!-- Content -->
-    <section class="c-section">
-      <h2 class="c-section__title"><span>Our Services</span></h2>
-      <ul class="c-services">
-        <li class="c-services__item">
-          <h3>Solution Architecture</h3>
-          <p>We offer comprehensive solution architecture services to ensure your systems are scalable, reliable, and
-            secure. Our team of experts collaborates with you to design and implement architectures that align with both
-            your business needs and technical requirements.</p>
-        </li>
-        <li class="c-services__item">
-          <h3>Cloud</h3>
-          <p>We offer cloud migration, cloud-native development, and management services to enhance scalability,
-            performance, and reduce costs. Our team ensures a seamless transition to the cloud or the development of new
-            cloud-based solutions.</p>
-        </li>
-        <li class="c-services__item">
-          <h3>Research and Development</h3>
-          <p>Our research and development services are designed to keep your business ahead of the curve. We conduct
-            in-depth research to identify emerging trends and technologies that can benefit your organization. Our team
-            works on innovative projects to develop new products, enhance existing ones, and explore new markets.
-            Whether you need support with product development, market research, or technology innovation, we have the
-            expertise to drive your R&D initiatives forward.</p>
-        </li>
-        <li class="c-services__item">
-          <h3>Artificial Intelligence</h3>
-          <p>Our AI integration services enable businesses to harness the power of artificial intelligence to drive
-            innovation and efficiency. We provide AI development, machine learning model training, and AI system
-            integration to optimize your business processes. Whether you’re looking to automate tasks, derive insights
-            from data, or develop intelligent applications, our team has the expertise to deliver cutting-edge AI
-            solutions tailored to your needs.</p>
-        </li>
-        <li class="c-services__item">
-          <h3>Application Development</h3>
-          <p>We specialize in developing applications across multiple platforms, including web, mobile, and desktop. Our
-            team is skilled in the latest technologies and frameworks, ensuring high-quality, user-friendly applications
-            tailored to your specific needs. Whether you require a robust web application, a seamless mobile app, or a
-            powerful desktop solution, we have the expertise to bring your vision to life.</p>
-        </li>
-        <li class="c-services__item">
-          <h3>Consultation</h3>
-          <p>Not sure which service is right for your business? We’re here to help. Our team will work with you to
-            determine the best solution tailored to your needs and budget.</p>
-        </li>
-      </ul>
-    </section>
 
-    <!-- End Content -->
-
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="animation.js"></script>
+  <script>lucide.createIcons();</script>
 </body>
 
 </html>
