@@ -440,12 +440,283 @@
 }
 
 @media (max-width: 575px) {
-  .tg-screenshot-item {
-    width: 180px;
-    height: 390px;
-  }
-
   .tg-feature-img {
     height: 150px;
+  }
+}
+
+
+/* ============================================
+   App-Landing Revamp — icon, store badges, phones
+   ============================================ */
+
+/* Hero top line: app icon + title */
+.tg-hero-topline {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin: 6px 0 6px;
+}
+
+.tg-hero-appicon {
+  width: 84px;
+  height: 84px;
+  border-radius: 20px;
+  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.18);
+  flex-shrink: 0;
+}
+
+.tg-hero-topline h1 {
+  font-size: clamp(2.5rem, 5vw, 3.75rem);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  margin: 0;
+}
+
+/* App store badges */
+.tg-store-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.tg-store-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 11px;
+  background: #000;
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 14px;
+  padding: 10px 20px;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.tg-store-badge:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 26px rgba(0, 0, 0, 0.24);
+  color: #fff;
+}
+
+.tg-store-badge svg {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  color: #fff;
+}
+
+.tg-store-badge .sb-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.12;
+  text-align: left;
+}
+
+.tg-store-badge .sb-small {
+  font-size: 10px;
+  letter-spacing: 0.02em;
+  opacity: 0.9;
+}
+
+.tg-store-badge .sb-big {
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+.tg-store-note {
+  font-size: var(--text-xs);
+  color: var(--text-light);
+  margin-top: 14px;
+}
+
+.tg-store-note a {
+  color: var(--primary);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+/* Phone device frame */
+.tg-phone {
+  position: relative;
+  width: 270px;
+  max-width: 100%;
+  background: #0e0e0e;
+  border-radius: 42px;
+  padding: 10px;
+  box-shadow: 0 26px 60px rgba(0, 0, 0, 0.30);
+}
+
+.tg-phone::after {
+  content: '';
+  position: absolute;
+  top: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 33%;
+  height: 20px;
+  background: #0e0e0e;
+  border-radius: 0 0 14px 14px;
+  z-index: 3;
+}
+
+.tg-phone img {
+  display: block;
+  width: 100%;
+  border-radius: 32px;
+}
+
+/* Hero phone composition */
+.tg-hero-visual {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 580px;
+}
+
+.tg-hero-visual::before {
+  content: '';
+  position: absolute;
+  width: 440px;
+  height: 440px;
+  max-width: 90%;
+  background: radial-gradient(circle, var(--primary-light) 0%, transparent 68%);
+  opacity: 0.75;
+  border-radius: 50%;
+  z-index: 0;
+}
+
+.tg-hero-visual .tg-phone {
+  position: absolute;
+}
+
+.tg-hero-visual .phone-back {
+  transform: translateX(-42%) rotate(-8deg) scale(0.84);
+  z-index: 1;
+}
+
+.tg-hero-visual .phone-main {
+  transform: translateX(10%);
+  z-index: 2;
+}
+
+/* Screenshots reel styled as phones */
+.tg-screenshot-item {
+  position: relative;
+  width: 250px;
+  height: auto;
+  padding: 8px;
+  background: #0e0e0e;
+  border-radius: 38px;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.22);
+  align-items: stretch;
+}
+
+.tg-screenshot-item::after {
+  content: '';
+  position: absolute;
+  top: 14px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 33%;
+  height: 18px;
+  background: #0e0e0e;
+  border-radius: 0 0 12px 12px;
+  z-index: 3;
+}
+
+.tg-screenshot-img {
+  width: 100%;
+  height: auto;
+  max-height: none;
+  border-radius: 30px;
+}
+
+.tg-screenshot-item:hover {
+  transform: translateY(-6px) scale(1.01);
+}
+
+/* Revamp responsive (kept last so it wins the cascade) */
+@media (max-width: 991px) {
+  .tg-hero-visual {
+    min-height: auto;
+    margin-top: 40px;
+  }
+
+  .tg-hero-visual .phone-back {
+    display: none;
+  }
+
+  .tg-hero-visual .phone-main {
+    position: relative;
+    transform: none;
+  }
+
+  .tg-hero-topline {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 575px) {
+  .tg-hero-appicon {
+    width: 64px;
+    height: 64px;
+    border-radius: 16px;
+  }
+
+  .tg-store-badge {
+    padding: 9px 16px;
+  }
+
+  .tg-screenshot-item {
+    width: 200px;
+  }
+}
+
+
+/* Refined feature grid — modern hover */
+.tg-feature-card {
+  padding: 30px 26px;
+}
+
+.tg-feature-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 44px rgba(0, 0, 0, 0.10);
+  border-color: rgba(255, 80, 85, 0.35);
+}
+
+.tg-feature-card .icon-wrap {
+  transition: background 0.25s ease, color 0.25s ease, transform 0.25s ease;
+}
+
+.tg-feature-card:hover .icon-wrap {
+  background: var(--primary);
+  color: #fff;
+  transform: scale(1.06) rotate(-3deg);
+}
+
+/* Mobile polish */
+@media (max-width: 767px) {
+  .tg-hero-content {
+    text-align: center;
+  }
+
+  .tg-store-badges {
+    justify-content: center;
+  }
+
+  .tg-store-note {
+    text-align: center;
+  }
+
+  .tg-badges {
+    justify-content: center;
+  }
+
+  .tg-phone {
+    width: 250px;
   }
 }

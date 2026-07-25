@@ -70,31 +70,53 @@
     <!-- ===== Product Hero ===== -->
     <section class="tg-hero">
       <div class="container">
-        <div class="row align-items-center">
+        <div class="row align-items-center g-5">
           <div class="col-lg-6">
             <div class="tg-hero-content fade-up">
-              <span class="label">Our Product</span>
-              <div class="tg-hero-brand">
-                <img src="images/thinkgym/logo.webp" alt="ThinkGym" class="tg-hero-logo">
+              <span class="label">Gym Management App</span>
+              <div class="tg-hero-topline">
+                <img src="images/thinkgym/tg-app-icon.png" alt="ThinkGym app icon" class="tg-hero-appicon">
                 <h1>ThinkGym</h1>
               </div>
-              <p class="tg-hero-tagline">Complete Gym Management Solution</p>
-              <p class="hero-subtitle">An all-in-one platform that replaces spreadsheets, paper logs, and scattered
-                tools with a single, intuitive system for managing your entire gym.</p>
+              <p class="tg-hero-tagline">Your entire gym, in one app.</p>
+              <p class="hero-subtitle">Memberships, payments, attendance and staff — all managed from a single,
+                intuitive app for owners, staff, and members. No more spreadsheets, paper logs, or scattered tools.</p>
               <div class="tg-badges">
-                <span class="tg-badge">Gym Management</span>
-                <span class="tg-badge">Staff Tracking</span>
-                <span class="tg-badge">Equipment Maintenance</span>
+                <span class="tg-badge">Members</span>
+                <span class="tg-badge">Payments</span>
+                <span class="tg-badge">Attendance</span>
+                <span class="tg-badge">Staff</span>
               </div>
-              <div class="btn-group mt-4">
-                <a href="https://wa.me/919652635479" target="_blank" class="btn-primary-custom">Get Started</a>
-                <a href="#features" class="btn-secondary-custom">Explore Features</a>
+              <div class="tg-store-badges">
+                <a class="tg-store-badge" href="https://apps.apple.com/app/id6755783930" target="_blank"
+                  rel="noopener" aria-label="Download ThinkGym on the App Store">
+                  <svg viewBox="0 0 384 512" aria-hidden="true">
+                    <path fill="currentColor"
+                      d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z" />
+                  </svg>
+                  <span class="sb-text"><span class="sb-small">Download on the</span><span class="sb-big">App
+                      Store</span></span>
+                </a>
+                <a class="tg-store-badge" href="https://play.google.com/store/apps/details?id=com.TOM.ThinkGym"
+                  target="_blank" rel="noopener" aria-label="Get ThinkGym on Google Play">
+                  <svg viewBox="0 0 512 512" aria-hidden="true">
+                    <path fill="currentColor"
+                      d="M47 0C34 6.8 25.3 19.2 25.3 35.3v441.3c0 16.1 8.7 28.5 21.7 35.3l256.6-256L47 0zm278.3 234.3L104.6 13l280.8 161.2-60.1 60.1zm147.9-8.7-58.9-34.1-65.7 64.5 65.7 64.5 60.1-34.1c18-14.3 18-46.5-1.2-60.8zM104.6 499l220.7-221.3 60.1 60.1L104.6 499z" />
+                  </svg>
+                  <span class="sb-text"><span class="sb-small">Get it on</span><span class="sb-big">Google
+                      Play</span></span>
+                </a>
               </div>
+              <p class="tg-store-note">Launching soon on iOS &amp; Android · <a href="https://wa.me/919652635479"
+                  target="_blank" rel="noopener">Talk to us</a></p>
             </div>
           </div>
-          <div class="col-lg-6 d-none d-lg-block">
-            <div class="tg-hero-image fade-in">
-              <img src="images/thinkgym/first.png" alt="ThinkGym Preview">
+          <div class="col-lg-6">
+            <div class="tg-hero-visual fade-in">
+              <div class="tg-phone phone-back"><img src="images/thinkgym/tg-app-login.jpg"
+                  alt="ThinkGym login screen"></div>
+              <div class="tg-phone phone-main"><img src="images/thinkgym/tg-app-member-home.jpg"
+                  alt="ThinkGym member home screen"></div>
             </div>
           </div>
         </div>
@@ -184,84 +206,73 @@
     <section class="section-alt" id="features">
       <div class="container">
         <div class="section-header fade-up">
-          <span class="label">Key Features</span>
-          <h2>Everything You Need to Run a Gym</h2>
-          <p>From payments to equipment tracking, ThinkGym handles it all so you can focus on your members.</p>
+          <span class="label">Features</span>
+          <h2>Everything you need to run a gym</h2>
+          <p>Members, payments, attendance and more — handled in one app, so you can focus on your members.</p>
         </div>
 
-        <!-- Featured Features with Images -->
-        <div class="row g-4 mb-5 stagger">
-          <div class="col-md-4">
-            <div class="tg-feature-card tg-feature-featured">
-              <div class="tg-feature-img">
-                <img src="images/thinkgym/whatsapp.png" alt="WhatsApp Integration">
-              </div>
-              <h3>WhatsApp Integration</h3>
-              <p>Seamless WhatsApp integration for instant notifications, reminders, and member communication.</p>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="tg-feature-card tg-feature-featured">
-              <div class="tg-feature-img">
-                <img src="images/thinkgym/equipment.PNG" alt="Equipment Management">
-              </div>
-              <h3>Equipment Maintenance</h3>
-              <p>Automated maintenance reminders and tracking to keep your equipment in optimal condition.</p>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="tg-feature-card tg-feature-featured">
-              <div class="tg-feature-img">
-                <img src="images/thinkgym/payments.PNG" alt="Payment Management">
-              </div>
-              <h3>Payment Management</h3>
-              <p>Streamlined payment processing and tracking for memberships, fees, and transactions.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Secondary Features -->
         <div class="row g-4 stagger">
           <div class="col-md-6 col-lg-4">
             <div class="tg-feature-card">
               <div class="icon-wrap"><i data-lucide="users"></i></div>
-              <h3>Multi-Profile System</h3>
-              <p>Dedicated interfaces for Admin, Staff, and User profiles with role-based access and permissions.</p>
+              <h3>Member Management</h3>
+              <p>Add members, track memberships, and see who's active, expiring, or overdue — at a glance.</p>
             </div>
           </div>
           <div class="col-md-6 col-lg-4">
             <div class="tg-feature-card">
-              <div class="icon-wrap"><i data-lucide="bar-chart-3"></i></div>
-              <h3>Real-Time Tracking</h3>
-              <p>Monitor staff, equipment status, and user activities instantly with comprehensive dashboards.</p>
+              <div class="icon-wrap"><i data-lucide="wallet"></i></div>
+              <h3>Payments &amp; Billing</h3>
+              <p>Record payments, track outstanding balances, and keep a clean history for every member.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="tg-feature-card">
+              <div class="icon-wrap"><i data-lucide="calendar-check"></i></div>
+              <h3>Attendance Tracking</h3>
+              <p>Automatic check-in logs give members and staff a complete, real-time attendance record.</p>
             </div>
           </div>
           <div class="col-md-6 col-lg-4">
             <div class="tg-feature-card">
               <div class="icon-wrap"><i data-lucide="fingerprint"></i></div>
-              <h3>Biometric Attendance</h3>
-              <p>Integrated biometric system for accurate and secure staff attendance tracking.</p>
+              <h3>Biometric Check-in</h3>
+              <p>Integrated eSSL fingerprint readers let members check in without codes or cards.</p>
             </div>
           </div>
           <div class="col-md-6 col-lg-4">
             <div class="tg-feature-card">
-              <div class="icon-wrap"><i data-lucide="trending-up"></i></div>
-              <h3>User Analytics</h3>
-              <p>Comprehensive user tracking and analytics to understand member behavior and engagement.</p>
+              <div class="icon-wrap"><i data-lucide="shield"></i></div>
+              <h3>Admin, Staff &amp; Member</h3>
+              <p>Three role-based profiles, each with the right tools and permissions for the job.</p>
             </div>
           </div>
           <div class="col-md-6 col-lg-4">
             <div class="tg-feature-card">
-              <div class="icon-wrap"><i data-lucide="zap"></i></div>
-              <h3>Instant Updates</h3>
-              <p>Real-time synchronization ensures all data is up-to-date across all devices and profiles.</p>
+              <div class="icon-wrap"><i data-lucide="message-circle"></i></div>
+              <h3>WhatsApp Reminders</h3>
+              <p>Send renewal reminders and updates straight to members' WhatsApp in one tap.</p>
             </div>
           </div>
           <div class="col-md-6 col-lg-4">
             <div class="tg-feature-card">
-              <div class="icon-wrap"><i data-lucide="shield-check"></i></div>
+              <div class="icon-wrap"><i data-lucide="dumbbell"></i></div>
+              <h3>Equipment Maintenance</h3>
+              <p>Log equipment and get maintenance reminders so nothing goes down unexpectedly.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="tg-feature-card">
+              <div class="icon-wrap"><i data-lucide="refresh-cw"></i></div>
+              <h3>Real-Time Sync</h3>
+              <p>Every change syncs instantly across phones, tablets, and the web dashboard.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="tg-feature-card">
+              <div class="icon-wrap"><i data-lucide="lock"></i></div>
               <h3>Secure &amp; Reliable</h3>
-              <p>Enterprise-grade security with reliable data backup and recovery systems.</p>
+              <p>Encrypted in transit, backed up in the cloud, and built on AWS for peace of mind.</p>
             </div>
           </div>
         </div>
@@ -281,34 +292,28 @@
         <div class="tg-screenshots-reel-wrap fade-up">
           <div class="tg-screenshots-reel" id="screenshotsReel">
             <div class="tg-screenshot-item">
-              <img src="images/thinkgym/IMG_7579.PNG" alt="ThinkGym Screenshot" class="tg-screenshot-img">
+              <img src="images/thinkgym/tg-app-login.jpg" alt="ThinkGym member login screen" class="tg-screenshot-img">
             </div>
             <div class="tg-screenshot-item">
-              <img src="images/thinkgym/IMG_7580.PNG" alt="ThinkGym Screenshot" class="tg-screenshot-img">
+              <img src="images/thinkgym/tg-app-dashboard.jpg" alt="ThinkGym admin dashboard" class="tg-screenshot-img">
             </div>
             <div class="tg-screenshot-item">
-              <img src="images/thinkgym/IMG_7581.PNG" alt="ThinkGym Screenshot" class="tg-screenshot-img">
+              <img src="images/thinkgym/tg-app-members.jpg" alt="ThinkGym members list" class="tg-screenshot-img">
             </div>
             <div class="tg-screenshot-item">
-              <img src="images/thinkgym/IMG_7582.PNG" alt="ThinkGym Screenshot" class="tg-screenshot-img">
+              <img src="images/thinkgym/tg-app-plans.jpg" alt="ThinkGym membership plans" class="tg-screenshot-img">
             </div>
             <div class="tg-screenshot-item">
-              <img src="images/thinkgym/IMG_7583.PNG" alt="ThinkGym Screenshot" class="tg-screenshot-img">
+              <img src="images/thinkgym/tg-app-payments.jpg" alt="ThinkGym payments ledger" class="tg-screenshot-img">
             </div>
             <div class="tg-screenshot-item">
-              <img src="images/thinkgym/IMG_7585.PNG" alt="ThinkGym Screenshot" class="tg-screenshot-img">
+              <img src="images/thinkgym/tg-app-member-home.jpg" alt="ThinkGym member home" class="tg-screenshot-img">
             </div>
             <div class="tg-screenshot-item">
-              <img src="images/thinkgym/IMG_7587.PNG" alt="ThinkGym Screenshot" class="tg-screenshot-img">
+              <img src="images/thinkgym/tg-app-attendance.jpg" alt="ThinkGym attendance calendar" class="tg-screenshot-img">
             </div>
             <div class="tg-screenshot-item">
-              <img src="images/thinkgym/IMG_7588.PNG" alt="ThinkGym Screenshot" class="tg-screenshot-img">
-            </div>
-            <div class="tg-screenshot-item">
-              <img src="images/thinkgym/IMG_7589.PNG" alt="ThinkGym Screenshot" class="tg-screenshot-img">
-            </div>
-            <div class="tg-screenshot-item">
-              <img src="images/thinkgym/IMG_7590.PNG" alt="ThinkGym Screenshot" class="tg-screenshot-img">
+              <img src="images/thinkgym/tg-app-memberships.jpg" alt="ThinkGym my memberships" class="tg-screenshot-img">
             </div>
           </div>
         </div>
