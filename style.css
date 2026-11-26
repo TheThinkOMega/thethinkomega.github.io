@@ -1505,3 +1505,40 @@ p {
     text-align: center;
   }
 }
+
+/* Registered trademark mark */
+.reg-mark {
+  font-size: 0.45em;
+  font-weight: 400;
+  vertical-align: super;
+  line-height: 0;
+  margin-left: 1px;
+  color: inherit;
+}
+
+.hero-graphic .logo-wrap {
+  position: relative;
+  z-index: 1;
+  width: 70%;
+  display: block;
+}
+
+.hero-graphic .logo-wrap img {
+  width: 100%;
+  display: block;
+}
+
+.hero-graphic .logo-reg {
+  position: absolute;
+  top: 6%;
+  right: 22%;
+  font-size: 1.25rem;
+  color: var(--dark);
+  line-height: 1;
+}
+
+.footer-bottom .tm-notice {
+  margin-top: 6px;
+  font-size: 0.8em;
+  opacity: 0.8;
+}
